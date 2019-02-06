@@ -1,0 +1,13 @@
+{
+  "token_missing": "No token provided!",
+  "token_not_valid": "Token not valid!",
+  "booking_not_found": "Booking not found!",
+  "booking_delete_success": "Booking successfully deleted!",
+  "car_not_found": "Car not found!",
+  "car_delete_success": "Car successfully deleted!",
+  "parking_not_found": "Parking not found!",
+  "parking_delete_success": "Parking successfully deleted!",
+  "auth_not_valid": "Authentication token not valid!",
+  "auth_failed": "Authentication failed. User not found.",
+  "auth_password_incorrect": "Incorrect password!"
+}

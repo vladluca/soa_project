@@ -1,0 +1,158 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": [
+    "jsx-a11y"
+  ],
+  "rules": {
+    //EcmaScript rules
+    "strict": [
+      2,
+      "global"
+    ],
+    "no-console": 1,
+    "no-unused-vars": 1,
+    "quote-props": [
+      2,
+      "as-needed"
+    ],
+    "no-undef": 2,
+    "no-multi-spaces": 1,
+    "valid-jsdoc": 1,
+    "no-underscore-dangle": 0,
+    "no-extra-parens": 0,
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    "quotes": 0,
+    "comma-spacing": 2,
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 1
+      }
+    ],
+    "space-infix-ops": 2,
+    // require spaces around operators
+    "eol-last": 2,
+    // enforce newline at the end of file, with no multiple empty lines
+    "no-use-before-define": 0,
+    "consistent-return": 0,
+    "no-shadow": 0,
+    "no-unreachable": 1,
+    "keyword-spacing": 1,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [
+      2,
+      140,
+      2
+    ],
+    "eqeqeq": [
+      2,
+      "smart"
+    ],
+    "key-spacing": [
+      2,
+      {
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "jsx-quotes": 1,
+    // react rules
+    "react/display-name": 1,
+    "react/forbid-prop-types": 0,
+    "react/jsx-boolean-value": 1,
+    "react/jsx-closing-bracket-location": 1,
+    "react/jsx-curly-spacing": 0,
+    "react/jsx-handler-names": 1,
+    "react/jsx-indent-props": [
+      1,
+      2
+    ],
+    "react/jsx-key": 1,
+    "react/jsx-max-props-per-line": [2, { "when": "always" }],
+    "react/jsx-first-prop-new-line": 2,
+    "react/jsx-no-bind": 2,
+    "react/jsx-no-duplicate-props": 1,
+    "react/jsx-no-literals": 0,
+    "react/jsx-no-undef": 1,
+    "react/jsx-pascal-case": 1,
+    "react/jsx-sort-prop-types": 0,
+    "react/jsx-sort-props": 0,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/no-danger": 1,
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-direct-mutation-state": 1,
+    "react/no-multi-comp": 1,
+    "react/no-set-state": 2,
+    "react/no-unknown-property": 1,
+    "react/prefer-es6-class": 1,
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 1,
+    "react/self-closing-comp": 1,
+    "react/sort-comp": 1,
+    "react/jsx-wrap-multilines": 1,
+    "jsx-a11y/no-onchange": 0
+  },
+  "globals": {
+    "describe": true,
+    "xdescribe": true,
+    "it": true,
+    "xit": true,
+    "inject": true,
+    "expect": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "spyOn": true
+  },
+  "env": {
+    "browser": true,
+    //browser environment to authorize document and window keywords
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "binaryLiterals": true,
+      "blockBindings": true,
+      // enable let and const (aka block bindings)
+      "classes": true,
+      "defaultParams": true,
+      "destructuring": true,
+      "forOf": true,
+      "generators": true,
+      "objectLiteralComputedProperties": true,
+      "objectLiteralDuplicateProperties": false,
+      "objectLiteralShorthandMethods": true,
+      "objectLiteralShorthandProperties": true,
+      "octalLiterals": true,
+      "regexUFlag": false,
+      "regexYFlag": false,
+      "spread": true,
+      "superInFunctions": false,
+      "templateStrings": true,
+      "unicodeCodePointEscapes": true,
+      "globalReturn": false,
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  }
+}

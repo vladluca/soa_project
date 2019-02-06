@@ -1,0 +1,76 @@
+html,
+body {
+  font-size: 14px;
+  font-family: "Helvetica", Arial;
+  line-height: 1.2;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 28px;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  display: block !important;
+}
+
+.logo {
+  float: left;
+  margin: 12px 15px;
+
+  img {
+    max-height: 30px;
+  }
+}
+
+.display-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.vam {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.actions-wrapper {
+  text-align: center;
+
+  & > * {
+    margin: 0 5px;
+  }
+}

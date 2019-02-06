@@ -1,0 +1,24 @@
+.btn {
+  border: 1px solid #999999;
+  padding: 5px;
+  min-width: 100px;
+
+  &:hover {
+    background: #999999;
+    color: #ffffff;
+  }
+}
+
+.actions-btn {
+  .action-btn {
+    padding: 0;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 18px;
+    min-width: auto;
+    line-height: 1;
+    margin: 0 5px;
+    float: left;
+  }
+}

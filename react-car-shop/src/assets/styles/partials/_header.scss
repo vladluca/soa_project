@@ -1,0 +1,24 @@
+.navbar-nav {
+  margin: 18px 0;
+
+  div > * {
+    margin: 0 5px;
+  }
+
+  button {
+    border: none;
+    min-width: auto;
+    color: #93c54b;
+    padding: 0;
+    line-height: 1;
+
+    &:active:focus,
+    &:focus,
+    &:hover {
+      background: none;
+      text-decoration: underline;
+      color: #79a736;
+      outline: none;
+    }
+  }
+}

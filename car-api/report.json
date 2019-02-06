@@ -1,0 +1,666 @@
+{
+    "reports": [
+        {
+            "aggregate": {
+                "sloc": {
+                    "logical": 44,
+                    "physical": 67
+                },
+                "cyclomatic": 9,
+                "halstead": {
+                    "operators": {
+                        "distinct": 10,
+                        "total": 143,
+                        "identifiers": [
+                            "var",
+                            "=",
+                            "()",
+                            ".",
+                            "function",
+                            "new",
+                            "if",
+                            "return",
+                            "{}",
+                            ":"
+                        ]
+                    },
+                    "operands": {
+                        "distinct": 46,
+                        "total": 181,
+                        "identifiers": [
+                            "\"use strict\"",
+                            "mongoose",
+                            "\"mongoose\"",
+                            "require",
+                            "Booking",
+                            "\"Booking\"",
+                            "model",
+                            "messages",
+                            "\"../i18n/en.json\"",
+                            "exports",
+                            "createBooking",
+                            "<anonymous>",
+                            "req",
+                            "res",
+                            "newBooking",
+                            "body",
+                            "err",
+                            "booking",
+                            400,
+                            "status",
+                            "send",
+                            201,
+                            "save",
+                            "getBookings",
+                            "bookings",
+                            500,
+                            200,
+                            "find",
+                            "getBooking",
+                            "params",
+                            "bookingId",
+                            "booking_not_found",
+                            404,
+                            "findById",
+                            "getAllBookingsForCar",
+                            "car",
+                            "carId",
+                            "updateBooking",
+                            "_id",
+                            "new",
+                            true,
+                            "findOneAndUpdate",
+                            "deleteBooking",
+                            "message",
+                            "booking_delete_success",
+                            "remove"
+                        ]
+                    },
+                    "length": 324,
+                    "vocabulary": 56,
+                    "difficulty": 19.67391304347826,
+                    "volume": 1881.5829947466639,
+                    "effort": 37018.10022273328,
+                    "bugs": 0.6271943315822213,
+                    "time": 2056.561123485182
+                },
+                "params": 23,
+                "line": 1,
+                "cyclomaticDensity": 20.454545454545457
+            },
+            "functions": [
+                {
+                    "name": "exports.createBooking",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 8
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 6,
+                            "total": 7,
+                            "identifiers": [
+                                "var",
+                                "=",
+                                "new",
+                                ".",
+                                "()",
+                                "function"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 9,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "newBooking",
+                                "body",
+                                "Booking",
+                                "<anonymous>",
+                                "save"
+                            ]
+                        },
+                        "length": 16,
+                        "vocabulary": 13,
+                        "difficulty": 3.8571428571428577,
+                        "volume": 59.207035490257475,
+                        "effort": 228.3699940338503,
+                        "bugs": 0.019735678496752493,
+                        "time": 12.687221890769461
+                    },
+                    "params": 2,
+                    "line": 8,
+                    "cyclomaticDensity": 50
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 5
+                    },
+                    "cyclomatic": 2,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 10,
+                            "identifiers": [
+                                "if",
+                                "return",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 13,
+                            "identifiers": [
+                                "err",
+                                "booking",
+                                400,
+                                "res",
+                                "status",
+                                "send",
+                                201
+                            ]
+                        },
+                        "length": 23,
+                        "vocabulary": 11,
+                        "difficulty": 3.7142857142857144,
+                        "volume": 79.56692722865785,
+                        "effort": 295.53430113501486,
+                        "bugs": 0.026522309076219282,
+                        "time": 16.418572285278604
+                    },
+                    "params": 2,
+                    "line": 10,
+                    "cyclomaticDensity": 66.66666666666666
+                },
+                {
+                    "name": "exports.getBookings",
+                    "sloc": {
+                        "logical": 1,
+                        "physical": 7
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 4,
+                            "identifiers": [
+                                "()",
+                                "{}",
+                                "function",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 5,
+                            "total": 6,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "<anonymous>",
+                                "Booking",
+                                "find"
+                            ]
+                        },
+                        "length": 10,
+                        "vocabulary": 9,
+                        "difficulty": 2.4,
+                        "volume": 31.699250014423125,
+                        "effort": 76.07820003461549,
+                        "bugs": 0.010566416671474375,
+                        "time": 4.22656666858975
+                    },
+                    "params": 2,
+                    "line": 18,
+                    "cyclomaticDensity": 100
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 5
+                    },
+                    "cyclomatic": 2,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 10,
+                            "identifiers": [
+                                "if",
+                                "return",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 13,
+                            "identifiers": [
+                                "err",
+                                "bookings",
+                                500,
+                                "res",
+                                "status",
+                                "send",
+                                200
+                            ]
+                        },
+                        "length": 23,
+                        "vocabulary": 11,
+                        "difficulty": 3.7142857142857144,
+                        "volume": 79.56692722865785,
+                        "effort": 295.53430113501486,
+                        "bugs": 0.026522309076219282,
+                        "time": 16.418572285278604
+                    },
+                    "params": 2,
+                    "line": 19,
+                    "cyclomaticDensity": 66.66666666666666
+                },
+                {
+                    "name": "exports.getBooking",
+                    "sloc": {
+                        "logical": 1,
+                        "physical": 10
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 3,
+                            "total": 5,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                "function"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 8,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "params",
+                                "bookingId",
+                                "<anonymous>",
+                                "Booking",
+                                "findById"
+                            ]
+                        },
+                        "length": 13,
+                        "vocabulary": 10,
+                        "difficulty": 1.7142857142857142,
+                        "volume": 43.18506523353572,
+                        "effort": 74.03154040034694,
+                        "bugs": 0.014395021744511906,
+                        "time": 4.11286335557483
+                    },
+                    "params": 2,
+                    "line": 27,
+                    "cyclomaticDensity": 100
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 5,
+                        "physical": 8
+                    },
+                    "cyclomatic": 3,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 17,
+                            "identifiers": [
+                                "if",
+                                "return",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 10,
+                            "total": 20,
+                            "identifiers": [
+                                "err",
+                                "booking",
+                                500,
+                                "res",
+                                "status",
+                                "send",
+                                200,
+                                "messages",
+                                "booking_not_found",
+                                404
+                            ]
+                        },
+                        "length": 37,
+                        "vocabulary": 14,
+                        "difficulty": 4,
+                        "volume": 140.87213211613133,
+                        "effort": 563.4885284645253,
+                        "bugs": 0.04695737737204377,
+                        "time": 31.304918248029182
+                    },
+                    "params": 2,
+                    "line": 28,
+                    "cyclomaticDensity": 60
+                },
+                {
+                    "name": "exports.getAllBookingsForCar",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 10
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 5,
+                            "total": 7,
+                            "identifiers": [
+                                "()",
+                                "{}",
+                                ":",
+                                ".",
+                                "function"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 8,
+                            "total": 10,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "<anonymous>",
+                                "car",
+                                "params",
+                                "carId",
+                                "Booking",
+                                "find"
+                            ]
+                        },
+                        "length": 17,
+                        "vocabulary": 13,
+                        "difficulty": 3.125,
+                        "volume": 62.907475208398566,
+                        "effort": 196.5858600262455,
+                        "bugs": 0.02096915840279952,
+                        "time": 10.92143666812475
+                    },
+                    "params": 2,
+                    "line": 38,
+                    "cyclomaticDensity": 50
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 5,
+                        "physical": 8
+                    },
+                    "cyclomatic": 3,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 17,
+                            "identifiers": [
+                                "if",
+                                "return",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 10,
+                            "total": 20,
+                            "identifiers": [
+                                "err",
+                                "bookings",
+                                500,
+                                "res",
+                                "status",
+                                "send",
+                                200,
+                                "messages",
+                                "booking_not_found",
+                                404
+                            ]
+                        },
+                        "length": 37,
+                        "vocabulary": 14,
+                        "difficulty": 4,
+                        "volume": 140.87213211613133,
+                        "effort": 563.4885284645253,
+                        "bugs": 0.04695737737204377,
+                        "time": 31.304918248029182
+                    },
+                    "params": 2,
+                    "line": 39,
+                    "cyclomaticDensity": 60
+                },
+                {
+                    "name": "exports.updateBooking",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 7
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 5,
+                            "total": 10,
+                            "identifiers": [
+                                "()",
+                                "{}",
+                                ":",
+                                ".",
+                                "function"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 11,
+                            "total": 15,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "<anonymous>",
+                                "_id",
+                                "params",
+                                "bookingId",
+                                "body",
+                                "new",
+                                true,
+                                "Booking",
+                                "findOneAndUpdate"
+                            ]
+                        },
+                        "length": 25,
+                        "vocabulary": 16,
+                        "difficulty": 3.4090909090909087,
+                        "volume": 100,
+                        "effort": 340.9090909090909,
+                        "bugs": 0.03333333333333333,
+                        "time": 18.939393939393938
+                    },
+                    "params": 2,
+                    "line": 50,
+                    "cyclomaticDensity": 33.33333333333333
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 5
+                    },
+                    "cyclomatic": 2,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 10,
+                            "identifiers": [
+                                "if",
+                                "return",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 13,
+                            "identifiers": [
+                                "err",
+                                "booking",
+                                500,
+                                "res",
+                                "status",
+                                "send",
+                                200
+                            ]
+                        },
+                        "length": 23,
+                        "vocabulary": 11,
+                        "difficulty": 3.7142857142857144,
+                        "volume": 79.56692722865785,
+                        "effort": 295.53430113501486,
+                        "bugs": 0.026522309076219282,
+                        "time": 16.418572285278604
+                    },
+                    "params": 2,
+                    "line": 51,
+                    "cyclomaticDensity": 66.66666666666666
+                },
+                {
+                    "name": "exports.deleteBooking",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 9
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 5,
+                            "total": 7,
+                            "identifiers": [
+                                "()",
+                                "{}",
+                                ":",
+                                ".",
+                                "function"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 8,
+                            "total": 10,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "<anonymous>",
+                                "_id",
+                                "params",
+                                "bookingId",
+                                "Booking",
+                                "remove"
+                            ]
+                        },
+                        "length": 17,
+                        "vocabulary": 13,
+                        "difficulty": 3.125,
+                        "volume": 62.907475208398566,
+                        "effort": 196.5858600262455,
+                        "bugs": 0.02096915840279952,
+                        "time": 10.92143666812475
+                    },
+                    "params": 2,
+                    "line": 59,
+                    "cyclomaticDensity": 50
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 4,
+                        "physical": 5
+                    },
+                    "cyclomatic": 2,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 6,
+                            "total": 13,
+                            "identifiers": [
+                                "if",
+                                "return",
+                                "()",
+                                ".",
+                                "{}",
+                                ":"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 10,
+                            "total": 15,
+                            "identifiers": [
+                                "err",
+                                500,
+                                "res",
+                                "status",
+                                "send",
+                                "<anonymous>",
+                                "message",
+                                "messages",
+                                "booking_delete_success",
+                                200
+                            ]
+                        },
+                        "length": 28,
+                        "vocabulary": 16,
+                        "difficulty": 4.5,
+                        "volume": 112,
+                        "effort": 504,
+                        "bugs": 0.037333333333333336,
+                        "time": 28
+                    },
+                    "params": 1,
+                    "line": 62,
+                    "cyclomaticDensity": 50
+                }
+            ],
+            "dependencies": [
+                {
+                    "line": 3,
+                    "path": "mongoose",
+                    "type": "CommonJS"
+                },
+                {
+                    "line": 5,
+                    "path": "../i18n/en.json",
+                    "type": "CommonJS"
+                }
+            ],
+            "maintainability": 134.4755069905972,
+            "loc": 2.8333333333333335,
+            "cyclomatic": 1.6666666666666667,
+            "effort": 302.51170881370746,
+            "params": 1.9166666666666667,
+            "path": "api/controllers/bookingController.js"
+        }
+    ],
+    "adjacencyMatrix": [
+        [
+            0
+        ]
+    ],
+    "firstOrderDensity": 0,
+    "visibilityMatrix": [
+        [
+            0
+        ]
+    ],
+    "changeCost": 100,
+    "coreSize": 0,
+    "loc": 2.8333333333333335,
+    "cyclomatic": 1.6666666666666667,
+    "effort": 302.51170881370746,
+    "params": 1.9166666666666667,
+    "maintainability": 134.4755069905972
+}

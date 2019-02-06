@@ -1,0 +1,35 @@
+version: "2"
+services:
+  cars_api:
+    container_name: carsApi
+    restart: always
+    build: .
+    ports:
+      - "3001:3001"
+    links:
+      - contact_api
+      - mongo
+
+  contact_api:
+    container_name: contactApi
+    restart: always
+    build: ../contactApi/
+    ports:
+      - "3002:3002"
+
+  cars_front_app:
+    container_name: carsFrontApp
+    restart: always
+    build: ../react-car-shop/
+    ports:
+      - "3000:3000"
+    links:
+      - cars_api
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
