@@ -44,7 +44,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "dependencies": {
-    "axios": "^0.14.0",
+    "axios": "^0.21.1",
     "moment": "^2.18.1",
     "prop-types": "^15.5.10",
     "react": "^16.0.0-beta.5",
